@@ -21,6 +21,7 @@ class AdminNode
      */
     public function getMenu()
     {
+
         if (ADMIN) {
             $nodes = Db::name("AdminNode")->where("status=1 AND group_id > 0")->field("id,pid,name,group_id,title,type")->select();
         } else {

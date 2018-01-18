@@ -113,7 +113,7 @@ function getHash(name, defaultValue) {
 $('#module-list').on('click', '.list-select', function () {
     currentModuleId = $(this).parent('li').attr('data-module-id');
     location.href = '#mid=' + currentModuleId;
-    initGroup(currentModuleId);
+    initGroup(currentModuleId);c
 });
 
 /**
